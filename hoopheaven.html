@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoop Heaven Workshop Application</title>
+    <link href="./assets/images/Connect1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+                body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("assets/images/GSWC.png");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Adding a black transparent blur overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); 
+            backdrop-filter: blur(5px); 
+            z-index: 1;
+        }
+                
+        .container, .logo-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Logo positioning */
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            width: 70px;
+            height: auto;
+        }
+
+        /* Main Container */
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+        
+        .leader-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: orange;
+        }
+
+        h3 {
+            color: #1e4356;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .qr-container img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .apply-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Make everything adaptable */
+        @media (max-width: 500px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .logo-container img {
+                width: 60px;
+            }
+
+            .leader-img, .qr-container img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .apply-btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logos at the top-left corner -->
+    <div class="logo-container">
+        <a href="https://globalsurge.church/">
+            <img src="./assets/img/logoup.png" alt="Logo 1">
+        </a>
+        <a href="index.html">
+            <img src="./assets/img/logo.png" alt="Logo 2">
+        </a>
+    </div>
+
+    <div class="container">
+        
+        <img src="./assets/images/WorkshopLeader/Jayson.png" alt="Leader Image" class="leader-img">
+        <h2>Jayson Dayang</h2>
+        <h3>Basketball Leader</h3>
+        <br>
+        <p>Scan the QR code or click the button below to apply.</p>
+        
+        <div class="qr-container">
+            <img src="./assets/images/qrs/qr1.png" alt="QR Code">
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR097IZf9eAwe2NLUQIGjJ4bdt25juL6yNTEqtu0eTD6tMeg/viewform?usp=preview" class="apply-btn" target="_blank">Apply via Google Forms</a>
+    </div>
+
+</body>
+</html>

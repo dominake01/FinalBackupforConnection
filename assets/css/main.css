@@ -241,6 +241,48 @@ h6 {
   margin-right: 8px;
 }
 
+/*---CSS for contact---*/
+.info-item,
+.php-email-form {
+    background-color: #1e4356; /* Background color */
+    border: 2px solid orange;  /* Orange border */
+    border-radius: 10px;       /* Smooth corners */
+    color: #000;               /* Text color for contrast */
+    padding: 20px;             /* Ensures content has enough space */
+}
+
+.php-email-form input,
+.php-email-form textarea {
+    background-color: #fff;   /* White background for form fields */
+    color: #000;              /* Black text for readability */
+    border: 1px solid orange; /* Optional: subtle border for form fields */
+}
+
+
+/*--Workshops Images CSS--*/
+.album .img-fluid {
+  height: 500px;
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album .img-fluid:hover {
+  transform: scale(1.05); /* Expands slightly */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.album .img-fluid:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  border-radius: 8px;
+}
 
 
 /* Global Header on Scroll
@@ -299,7 +341,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: orange;
   }
 
   .navmenu .dropdown ul {
@@ -485,6 +527,199 @@ h6 {
     display: block;
   }
 }
+
+
+/*--Css for images under the landing page--*/
+/* Base styles */
+/* Base styles */
+/* Base styles */
+.service-item {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Centers all content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item img {
+  max-width: 100%; /* Ensures the image scales within its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  display: block; /* Prevents unwanted gaps below the image */
+  border-radius: 8px; /* Optional: adds smooth corners */
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+  .service-item {
+      padding: 18px;
+  }
+
+  h3 {
+      font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-item {
+      padding: 15px;
+  }
+
+  h3 {
+      font-size: 20px; /* Smaller heading for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+      padding: 10px;
+  }
+
+  h3 {
+      font-size: 18px; /* Further reduce heading size */
+  }
+}
+
+/*------Connection Team CSS-------*/
+
+.carousel-item .row {
+  display: flex;
+  flex-direction: column; /* Stack content on smaller screens */
+  text-align: center; /* Centers text content */
+}
+
+.profile-img {
+  width: 50%; /* Balanced size for responsiveness */
+  max-width: 300px; /* Ensures it doesn't get too large */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.social-icons-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Align with image width */
+  transform: translateX(-50%); /* Perfectly center the overlay */
+  width: 70%; /* Same width as the image */
+  max-width: 300px; /* Matches the image's max width */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.position-relative:hover .social-icons-overlay {
+  opacity: 1;
+}
+
+
+.social-icons-overlay .icon {
+  color: #fff;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.social-icons-overlay .icon:hover {
+  background-color: var(--default-color);
+}
+
+.social-icons-overlay .contact-info {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-color);
+  color: var(--default-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons-overlay .icon:hover .contact-info {
+  display: block;
+}
+
+/* Typography for Headings and Text */
+.carousel-item .col-md-7 {
+  text-align: center; /* Centers text for better readability */
+  padding-top: 15px;
+}
+
+.carousel-item h3,
+.carousel-item h4,
+.carousel-item p {
+  margin-bottom: 10px;
+}
+
+/*-----Icon Info Hovered---*/
+.info-icon {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--default-color);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.info-icon:hover {
+  color: var(--accent-color); /* Highlight on hover */
+}
+
+.info-icon .info-text {
+  position: absolute;
+  bottom: 35px; /* Position tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-color);
+  color: var(--default-color);
+  padding: 12px 16px; /* Increased padding for better spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 14px;
+  width: 200px; /* Increased width for longer text */
+  white-space: normal; /* Allows multi-line text */
+  z-index: 10;
+
+  /* Animation setup */
+  max-height: 0;         /* Collapsed by default */
+  overflow: hidden;      /* Prevents content from spilling out */
+  opacity: 0;            /* Invisible by default */
+  transition: max-height 0.4s ease-out, opacity 0.3s ease;
+  width: 400px;
+}
+
+.info-icon:hover .info-text {
+  max-height: 500px;    /* Expanded height for larger content */
+  opacity: 1;           /* Fully visible */
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -732,7 +967,7 @@ h6 {
 
 .page-title:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../images/bgw.png") center top no-repeat;
   position: absolute;
   inset: 0;
 }
@@ -837,7 +1072,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -851,11 +1086,11 @@ section,
   left: 50%;
   top: 0;
   width: 130%;
-  height: 95%;
-  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
+  height: 100vh;
+  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../images/GSWC.png") center top no-repeat;
   background-size: cover;
   z-index: 0;
-  border-radius: 0 0 50% 50%;
+
   transform: translateX(-50%) rotate(0deg);
 }
 
@@ -935,16 +1170,16 @@ section,
   display: inline-block;
   padding: 12px 32px;
   border-radius: 50px;
-  transition: 0.5s;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   line-height: 1;
   margin: 10px;
   color: var(--default-color);
   animation: fadeInUp 1s both 0.4s;
-  border: 2px solid var(--accent-color);
+  background-color: orange;
 }
 
 .hero .btn-get-started:hover {
-  background: var(--accent-color);
+  background: orangered;
   color: var(--contrast-color);
   text-decoration: none;
 }
@@ -979,14 +1214,70 @@ section,
   .hero .carousel-control-next {
     width: 5%;
   }
-}
-
-@media (max-width: 768px),
-(max-height: 700px) {
-  .hero h2 {
-    font-size: 28px;
+  .hero .btn-get-started {
+    width: 20%;
   }
 }
+
+/*--For phone display---*/
+/* For smaller devices like phones */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .hero p {
+    font-style: normal;
+  }
+  .hero .btn-get-started {
+    width: 50%;
+  }
+}
+
+/* For phones in landscape mode */
+@media (max-width: 767px) {
+  .hero h2 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .hero p {
+    font-style: italic;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .hero p {
+    font-style: italic;
+  }
+}
+
+/* Small laptops / larger tablets */
+@media (max-width: 1280px) {
+  .hero h2 {
+    font-size: 44px;
+    font-weight: 900;
+  }
+  .hero p {
+    font-style: italic;
+  }
+}
+
+
+@media (min-width: 1281px) {
+  .hero h2 {
+    font-size: 70px;
+    font-weight: 900;
+  }
+  .hero p {
+    font-style: italic;
+  }
+}
+
 
 @keyframes fadeInUp {
   from {
@@ -1011,6 +1302,10 @@ section,
     transform: translate3d(0, 0, 0);
   }
 }
+
+
+/*-----Ministries Border-------*/
+
 
 /*--------------------------------------------------------------
 # Featured Services Section
@@ -1606,6 +1901,25 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+/*----Dropdown About Us-----*/
+.dropdown-menu {
+  display: none;
+  position: absolute; /* Important for dropdown visibility */
+  background-color: #fff;
+  width: 100%; /* Adjust width for mobile */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show on hover for larger screens */
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: block; /* Show dropdown directly for mobile */
+    position: static; /* Avoid positioning issues */
+    background-color: transparent;
+  }
 }
 
 /*--------------------------------------------------------------
