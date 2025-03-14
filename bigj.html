@@ -15,7 +15,7 @@
             font-family: 'Poppins', sans-serif;
         }
         
-                body {
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -29,7 +29,6 @@
             overflow: hidden;
         }
 
-        /* Adding a black transparent blur overlay */
         body::before {
             content: "";
             position: absolute;
@@ -47,7 +46,6 @@
             z-index: 2;
         }
 
-        /* Logo positioning */
         .logo-container {
             position: absolute;
             top: 10px;
@@ -62,7 +60,6 @@
             height: auto;
         }
 
-        /* Main Container */
         .container {
             background: #fff;
             padding: 20px;
@@ -93,31 +90,41 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 8px;
             color: #555;
             margin-bottom: 20px;
+            font-style: italic;
         }
         
         .qr-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
             margin-bottom: 15px;
         }
 
-        .qr-container img {
-            width: 120px;
-            height: 120px;
+        .qr-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .qr-item img {
+            width: 100px;
+            height: 100px;
         }
 
         .apply-btn {
             display: inline-block;
-            width: 100%;
-            padding: 12px;
+            width: auto;
+            padding: 8px 12px;
             background: #007BFF;
             color: white;
             border: none;
             border-radius: 8px;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 600;
             text-decoration: none;
             cursor: pointer;
@@ -128,7 +135,6 @@
             background: #0056b3;
         }
 
-        /* Make everything adaptable */
         @media (max-width: 500px) {
             .container {
                 width: 90%;
@@ -139,14 +145,14 @@
                 width: 60px;
             }
 
-            .leader-img, .qr-container img {
-                width: 100px;
-                height: 100px;
+            .leader-img, .qr-item img {
+                width: 90px;
+                height: 90px;
             }
 
             .apply-btn {
-                font-size: 14px;
-                padding: 10px;
+                font-size: 10px;
+                padding: 6px 10px;
             }
         }
     </style>
@@ -172,11 +178,15 @@
         <p>Scan the QR code or click the button below to apply.</p>
         
         <div class="qr-container">
-            <img src="./assets/images/qrs/qr1.png" alt="QR Code">
+            <div class="qr-item">
+                <img src="./assets/images/qrs/MICROQR/BIGQR2.png" alt="QR Code 1">
+                <a href="https://forms.office.com/r/sfs6LebpUS" class="apply-btn" target="_blank">Apply via Microsoft Form</a>
+            </div>
+            <div class="qr-item">
+                <img src="./assets/images/qrs/BIGQR.png" alt="QR Code 2"  >
+                <a href="https://forms.gle/BtUXjy3RGdnsSquT7" class="apply-btn" target="_blank">Apply via Google Form</a>
+            </div>
         </div>
-
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR097IZf9eAwe2NLUQIGjJ4bdt25juL6yNTEqtu0eTD6tMeg/viewform?usp=preview" class="apply-btn" target="_blank">Apply via Google Forms</a>
-    </div>
 
 </body>
 </html>

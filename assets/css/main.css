@@ -244,11 +244,11 @@ h6 {
 /*---CSS for contact---*/
 .info-item,
 .php-email-form {
-    background-color: #1e4356; /* Background color */
-    border: 2px solid orange;  /* Orange border */
+    background-color: #1e4356; /* Background color */  /* Orange border */
     border-radius: 10px;       /* Smooth corners */
     color: #000;               /* Text color for contrast */
-    padding: 20px;             /* Ensures content has enough space */
+    padding: 20px;
+    box-shadow: pink;             /* Ensures content has enough space */
 }
 
 .php-email-form input,
@@ -1066,6 +1066,7 @@ section,
 .section-title p {
   margin-bottom: 0;
 }
+/*--Stars--*/
 
 /*--------------------------------------------------------------
 # Hero Section
