@@ -589,6 +589,7 @@ h3 {
 
 /*------Connection Team CSS-------*/
 
+
 .carousel-item .row {
   display: flex;
   flex-direction: column; /* Stack content on smaller screens */
@@ -608,7 +609,7 @@ h3 {
   top: 0;
   left: 50%; /* Align with image width */
   transform: translateX(-50%); /* Perfectly center the overlay */
-  width: 70%; /* Same width as the image */
+  width: 48%; /* Same width as the image */
   max-width: 300px; /* Matches the image's max width */
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
@@ -954,6 +955,10 @@ h3 {
   }
 }
 
+/*--GetInvolved CSS ---*/
+
+
+
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
@@ -1066,7 +1071,9 @@ section,
 .section-title p {
   margin-bottom: 0;
 }
-/*--Stars--*/
+/*--Carousel Next and Prev Arrow Color--*/
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -1604,6 +1611,8 @@ section,
   transition: 0.9s;
   background-color: var(--accent-color);
 }
+
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
