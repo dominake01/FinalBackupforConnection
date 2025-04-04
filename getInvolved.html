@@ -47,21 +47,23 @@
         <img src="assets/img/logo.png" alt="" style=" width: 80px; height: 100px;">
         
       </a>
+      
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#featured-services">Ministries</a></li>
-       
+          <li><a href="#featured-services">Ministries</a></li>
+      
           <li class="dropdown">
-            <a href="index.html#about">About Us</a>
+            <a href="#about">About Us</a>
             <ul class="dropdown-menu">
-              <li><a href="index.html#about">Who we are</a></li>
-              <li><a href="index.html#team">Team</a></li>
+              <li><a href="#about">Who we are</a></li>
+              <li><a href="#team">Team</a></li>
             </ul>
           </li>
       
-          <li><a href="getInvolved.html"  class="active">Get Involved</a></li>
+          <li><a href="getInvolved.html" class="active">Get Involved</a></li>
       
+          
           <li class="dropdown">
             <a href="workshop.html">Workshops</a>
             <ul class="dropdown-menu">
@@ -76,6 +78,7 @@
                   <li><a href="./Workshops/womenbasketball.html">Women's Basketball</a></li>
                 </ul>
               </li>
+
 
               <li class="dropdown">
                 <a href="./Workshops/hoopheaven.html">Hoop Heaven</a>
@@ -95,7 +98,20 @@
                   <li><a href="./Workshops/production.html">Media</a></li>
                 </ul>
               </li>
+
+              <li class="dropdown">
+                <a href="./Workshops/production.html">Worship Team</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./Workshops/Voice.html">Voice</a></li>
+                  <li><a href="./Workshops/Drums.html">Drums</a></li>
+                  <li><a href="./Workshops/Keys.html">Keys</a></li>
+                  <li><a href="./Workshops/Guitar.html">Guitar</a></li>
+                  <li><a href="./Workshops/Bass.html">Bass</a></li>
+                </ul>
+              </li>
+
               <li><a href="./Workshops/toughguys.html">Tough Guys</a></li>
+              <a href="workshop.html">Workshops Leaders</a>
             </ul>
           </li>
       
@@ -106,6 +122,7 @@
       
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
     </div>
   </header>
   <main class="main">
@@ -143,7 +160,7 @@
                       </ul>
                       <div class="qr-container mt-3">
                           <a href="#" target="_blank">
-                              <img src="./assets/images/qrs/GetInvolvedQR/WAHQR.png" alt="Scan QR" class="qr-code">
+                              <img src="./assets/images/qrs/GetInvolvedQR/WAHQR.png" alt="Scan QR" class="qr1-code">
                           </a>
                           <p class="text-gray-500">Scan to Learn More</p>
                       </div>
@@ -166,7 +183,7 @@
                       </ul>
                       <div class="qr-container mt-3">
                           <a href="#" target="_blank">
-                              <img src="./assets/images/qrs/GetInvolvedQR/CASQR.png" alt="Scan QR" class="qr-code">
+                              <img src="./assets/images/qrs/GetInvolvedQR/CASQR.png" alt="Scan QR" class="qr2-code">
                           </a>
                           <p class="text-gray-500">Scan to Learn More</p>
                       </div>
@@ -189,7 +206,7 @@
                       </ul>
                       <div class="qr-container mt-3">
                           <a href="#" target="_blank">
-                              <img src="./assets/images/qrs/GetInvolvedQR/PCQR.png" alt="Scan QR" class="qr-code">
+                              <img src="./assets/images/qrs/GetInvolvedQR/PCQR.png" alt="Scan QR" class="qr3-code">
                           </a>
                           <p class="text-gray-500">Scan to Learn More</p>
                       </div>
@@ -203,7 +220,7 @@
                   <div class="p-4 text-center">
                       <img src="./assets/images/Connect1.png" class="service-icon">
                       <img src="./assets/img/logoup.png" class="service-icon">
-                      <h3 class="text-xl font-semibold text-warning">General Admission</h3>
+                      <h3 class="text-xl font-semibold text-warning" style="font-size: 24px;">General Administration</h3>
                       <p class="text-gray-700">Be the first to welcome and assist new guests.</p>
                       <ul class="list-unstyled text-gray-600 mt-2">
                           <li>✔ Communication and Information (CAI)</li>
@@ -213,7 +230,7 @@
                       </ul>
                       <div class="qr-container mt-3">
                           <a href="#" target="_blank">
-                              <img src="./assets/images/qrs/GetInvolvedQR/WAHQR.png" alt="Scan QR" class="qr-code">
+                              <img src="./assets/images/qrs/GetInvolvedQR/GAQR.png" alt="Scan QR" class="qr4-code">
                           </a>
                           <p class="text-gray-500">Scan to Learn More</p>
                       </div>
@@ -225,13 +242,16 @@
   
   
   <style>
-    .service-card {
+  .service-card {
     background-color: #1e4356;
     color: aliceblue;
     border-radius: 10px;
     padding: 20px;
     height: 500px;
     border-color: orange;
+    width: 270px;
+    
+    
 }
 
 .service-icon {
@@ -258,20 +278,52 @@ p {
     list-style: none;
     font-size: 10px;
 }
-.qr-code {
+
+.qr1-code {    
+    position: relative;
     width: 100px;
     height: 100px;
+    margin-top: 20px;
 }
 
-.qr-container p {
+.qr1-container p {
     font-size: 12px;
     font-style: italic;
 }
 
+.qr2-code {    
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 35px;
+}
 
+.qr2-container p {
+    font-size: 12px;
+    font-style: italic;
+}
+.qr3-code {    
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
 
+.qr3-container p {
+    font-size: 12px;
+    font-style: italic;
+}
+.qr4-code {    
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
 
-/* Responsive adjustments */
+.qr4-container p {
+    font-size: 12px;
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
     .col-md-6 {
         flex: 0 0 50%;
@@ -283,13 +335,57 @@ p {
     .col-md-6 {
         flex: 0 0 100%;
         max-width: 100%;
+        display: flex;
+        justify-content: center;
     }
+    .service-card {
+      width: 350px;
+    }
+    .service-card img {
+      height: 100px;
+      width: 107px;
+    }
+    .service-card p {
+      font-style: italic;
+    }
+    
 }
 
+.calendar {
+  border: 0;
+  width: 100%;
+  height: 650px;
+  align-items: center;
+  align-self: center;
+  justify-content: center; 
+}
+
+.calendar h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+ .calendar {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 370px;
+    padding: 10px;
+  }
+
+}
 </style>
   
-    
+  
   </main>
+
+<div class="calendar">
+<center><h2>Calendar</h2></center> 
+  <iframe src="https://calendar.google.com/calendar/embed?src=cabangisandominicl%40gmail.com&ctz=Asia%2FManila" width="100%" height="600" frameborder="0" scrolling="no">
+  </iframe>
+</div>
+  
+  
 
   <footer id="footer" class="footer dark-background">
 
@@ -302,7 +398,7 @@ p {
             <span class="sitename">Connection Ministry</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Dr. Sixto Antonio Ave., </p>
+            <h5>Dr. Sixto Antonio Ave., </h5>
             <p>Pasig, 1606 Metro Manila</p>
             <p class="mt-3"><strong>Phone:</strong> <span>0997-390-7185 / 0997-390-7182</span></p>
             <p><strong>Email:</strong> <span>connection@globalsurge.org</span></p>

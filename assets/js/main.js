@@ -25,15 +25,26 @@
   /**
    * Mobile nav toggle
    */
-  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
-  }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
-
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
+    
+    function mobileNavToogle() {
+      document.querySelector("body").classList.toggle("mobile-nav-active");
+      mobileNavToggleBtn.classList.toggle("bi-list");
+      mobileNavToggleBtn.classList.toggle("bi-x");
+    }
+  
+    mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
+  
+    // Handle dropdown clicks
+    document.querySelectorAll(".dropdown > a").forEach((dropdownLink) => {
+      dropdownLink.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent default navigation
+        this.parentElement.classList.toggle("dropdown-active");
+      });
+    });
+  });
+  
   /**
    * Hide mobile nav on same-page/hash links
    */
