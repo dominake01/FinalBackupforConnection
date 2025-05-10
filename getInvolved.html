@@ -41,12 +41,14 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="./assets/img/logoup.png" alt="" style=" width: 80px; height: 100px;">
-        <img src="assets/img/logo.png" alt="" style=" width: 80px; height: 100px;">
-        
-      </a>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="https://globalsurge.church/">
+          <img src="./assets/img/logoup.png" alt="" style="width: 80px; height: 70px;">
+        </a>
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/logo.png" alt="" style="width: 80px; height: 100px;">
+        </a>
+      </div>
       
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -67,6 +69,7 @@
           <li class="dropdown">
             <a href="workshop.html">Workshops</a>
             <ul class="dropdown-menu">
+              <a href="workshop.html">Workshops Leaders</a>
               <li><a href="./Workshops/drama.html">Acting</a></li>
               <li><a href="./Workshops/bigj.html">Big J</a></li>
               <li class="dropdown">
@@ -111,7 +114,7 @@
               </li>
 
               <li><a href="./Workshops/toughguys.html">Tough Guys</a></li>
-              <a href="workshop.html">Workshops Leaders</a>
+              
             </ul>
           </li>
       
@@ -138,8 +141,37 @@
     </div><!-- End Page Title -->
 
     <!-- Portfolio Section -->
-    <section class="container py-16 px-6">
-      <h2 class="text-3xl font-bold text-center text-orange-500 mb-10" style="font-size: 40px; font-weight: 700;">
+    <section class="container py-16 px-6" style="background-color: transparent;">
+
+
+      <style>
+        body{
+        background-image: url(./assets/images/bgforcontact.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+        .responsive-bg {
+        background-image: url('./assets/images/bgforcontact.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      
+      @media (max-width: 600px) {
+        .responsive-bg {
+          padding: 2rem 1rem;
+          min-height: 100vh; 
+          background-position: center; 
+        }
+      }
+
+      </style>
+
+
+      <h2 class="text-3xl font-bold text-center text-orange-500 mb-10" style="font-size: 40px; font-weight: 900;">
           Where Can You Serve?
       </h2>
       <br>
@@ -380,69 +412,79 @@ p {
   </main>
 
 <div class="calendar">
-<center><h2>Calendar</h2></center> 
+<center><h2 style="font-size: 40px; font-weight: 900;">Calendar</h2></center> 
   <iframe src="https://calendar.google.com/calendar/embed?src=cabangisandominicl%40gmail.com&ctz=Asia%2FManila" width="100%" height="600" frameborder="0" scrolling="no">
   </iframe>
 </div>
   
   
 
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
 
     
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Connection Ministry</span>
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="d-flex align-items-center">
+          <span class="sitename" style="color: orange;">Connection Ministry</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Dr. Sixto Antonio Ave., </p>
+          <p>Pasig, 1606 Metro Manila</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>0997-390-7185 / 0997-390-7182</span></p>
+          <p><strong>Email:</strong> <span>connection@globalsurge.org</span></p>
+          <p><strong>Messenger:</strong> <span>Global-Surge Follow-Up</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html#featured-services">Ministries</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="getInvolved.html">Get Involved</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="workshop.html">Workshops</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-lg-4 col-md-12">
+        <h4>Follow Us</h4>
+        <p>Visit our social media and other websites for more update!</p>
+        <div class="social-links d-flex">
+          <a href="https://web.facebook.com/GSWCPasig"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/gswcpasig?igsh=MWg2ZGdidWxnNDUwdg=="><i class="bi bi-instagram"></i></a>
+         
+          <a href="https://gswcpasig.netlify.app/" title="Go to GSWC Pasig">
+            <img src="./assets/img/logoup.png" alt="Logo" style="max-width: 100%; height: auto;">
           </a>
-          <div class="footer-contact pt-3">
-            <h5>Dr. Sixto Antonio Ave., </h5>
-            <p>Pasig, 1606 Metro Manila</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>0997-390-7185 / 0997-390-7182</span></p>
-            <p><strong>Email:</strong> <span>connection@globalsurge.org</span></p>
-            <p><strong>Messenger:</strong> <span>Global-Surge Follow-Up</span></p>
-          </div>
+
+          <a href="https://bigjdance.live/?fbclid=IwZXh0bgNhZW0CMTEAAR19j9acCTUJ26ew0arM7UW4WA-aKxJrPQXeTNyyQGaXz4FgIsysSiP8Q94_aem_UEfgUOpOcBLDPkJEOQXeGg" title="Go to Big J">
+            <img src="./assets/img/bigj.png" alt="Logo" style="max-width: 100%; height: auto;">
+          </a>
+
+          <a href="http://gpro.22web.org/main.php?i=2" title="Go to Gpro">
+            <img src="./assets/img/gpro.png" alt="Logo" style="max-width: 100%; height: auto;">
+          </a>
+
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="">Ministries</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Get Involved</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Workshops</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Visit our social medial for more update!</p>
-          <div class="social-links d-flex">
-            <a href="https://web.facebook.com/GSWCPasig"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/gswcpasig?igsh=MWg2ZGdidWxnNDUwdg=="><i class="bi bi-instagram"></i></a>
-  
-          </div>
-        </div>
-
       </div>
+
     </div>
+  </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Connection Ministry</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        
-        Designed by <a>Connection Ministry</a>
-      </div>
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Connection Ministry</strong> <span>All Rights Reserved</span></p>
+    <div class="credits">
+      
+      Designed by <a  style="color: orange; font-weight: bold;"> Connection Ministry</a>
+      <a style="color: #1e4356;" href="https://web.facebook.com/qzzzz.js1">DOM ^_^ </a>
     </div>
+  </div>
 
-  </footer>
-
-
-
+</footer>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

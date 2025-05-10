@@ -35,14 +35,15 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        
-        <img src="./assets/img/logoup.png" alt="" style=" width: 80px; height: 100px;">
-        <img src="./assets/img/logo.png" alt="" style=" width: 80px; height: 100px;">
-        
-      </a>
-
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="https://globalsurge.church/">
+          <img src="./assets/img/logoup.png" alt="" style="width: 80px; height: 70px;">
+        </a>
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/logo.png" alt="" style="width: 80px; height: 100px;">
+        </a>
+      </div>
+      
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -63,6 +64,7 @@
           <li class="dropdown">
             <a href="workshop.html">Workshops</a>
             <ul class="dropdown-menu">
+              <a href="workshop.html">Workshops Leaders</a>
               <li><a href="./Workshops/drama.html">Acting</a></li>
               <li><a href="./Workshops/bigj.html">Big J</a></li>
               <li class="dropdown">
@@ -108,7 +110,7 @@
               
 
               <li><a href="./Workshops/toughguys.html">Tough Guys</a></li>
-              <a href="workshop.html">Workshops Leaders</a>
+              
             </ul>
           </li>
       
@@ -131,16 +133,73 @@
     
     <!-- Hero Section -->
     
+
     <section id="hero" class="hero section dark-background">
+
 
       <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
 
+
       <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  
 
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <div class="bubbles">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+            </div>
+                  
         <div class="container position-relative">
-
-          <div class="carousel-item active">
-            <div class="carousel-container">
+      
               <h2>CONNECTION MINISTRY</h2>
               <p>
                 "Empowering connections that inspire growth and lasting faith."
@@ -153,20 +212,36 @@
           </script>
 
         </div>
+        
 
       </div>
 
     </section><!-- /Hero Section -->
 
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
+    <section id="featured-services" class="featured-services section responsive-bg">
 
-  
+      <style>
+        .responsive-bg {
+        background-image: url('./assets/images/bgforcontact.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      
+      @media (max-width: 600px) {
+        .responsive-bg {
+          padding: 2rem 1rem;
+          min-height: 100vh; 
+          background-position: center; 
+        }
+      }
+
+      </style>
     
-
-  
-      <div class="container" style="max-width: 1000px;">
-<center> <h1 style="font-weight: 900; margin-top: -20px;">Ministries</h1></center>
+    <div class="container" style="max-width: 1000px;">
+<center> <h1 style="font-weight: 900; margin-top: -20px; font-weight: 900; font-size: 40px;">Ministries</h1></center>
         <div class="row gy-3">
       
           <!--Ministries-->
@@ -216,8 +291,8 @@
         color: white;
         top: 20px;
         left: auto;
-        box-shadow: 0px 8px 9px rgba(80, 80, 80, 0.5);
-        border: solid 1px #1e4356;
+        box-shadow: 0px 10px 11px rgba(80, 80, 80, 0.5);
+        border: solid 2px orange;
       }
 
       .card-1::before,
@@ -256,12 +331,6 @@
         text-align: center;
       }
 
-      .card-1:hover:after {
-        font-size: 14px;
-        padding: 15px;
-        font-style: italic;
-        content: "Starting Point is your Next Step in discovering community and the core values of Compass. This four-part class is designed to teach you more about the church as well as how you can connect, build relationships, and discover your next step in your walk with God.";
-      }
 
       .card-2::before,
       .card-2::after {
@@ -299,7 +368,35 @@
         text-align: center;
       }
 
-     
+      .card-1:hover::after {
+        content: "Starting Point is your Next Step in discovering community and the core values of Compass. This four-part class is designed to teach you more about the church as well as how you can connect, build relationships, and discover your next step in your walk with God.";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+
+        display: block;
+        background-image: url('./assets/images/PNGS/spc\ png.png');
+        background-repeat: no-repeat;
+        background-position: top center ;
+        background-size: 130px 60px;        
+        margin-top: 10px;
+
+        padding-top: 90px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+
+        width: auto;
+        height: 319px;
+        white-space: pre-wrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px; 
+      }
+
+
 
       .card-3::before,
       .card-3::after, 
@@ -351,23 +448,213 @@
         transition: all 0.5s;
         text-align: center;
       }
+
+      
       
       .card-2:hover:after {
-        content: "Spiritual Mind Class";
+        font-size: 14px;
+        font-weight: 400;
+        padding: 18px;
+        font-style: italic;
+        color: white;
+        content: ".";
       }
-      .card-3:hover:after {
-        content: "Discover My Ministry Class";
+
+      .card-2:hover::after {
+        content: " A Spiritual Mind Class in church is typically a class or group focused on deepening spiritual understanding and aligning one’s thoughts with God's truth. It often teaches how to renew the mind through scripture, prayer, and spiritual principles, helping participants grow in faith, inner peace, and divine purpose can make a meaningful impact using their God-given abilities.";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+
+        display: block;
+        background-image: url('./assets/images/PNGS/smc\ png.png');
+        background-repeat: no-repeat;
+        background-position: top center ;
+        background-size: 130px 60px;        
+        margin-top: 10px;
+
+        padding-top: 90px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+
+        width: auto;
+        height: 319px;
+        white-space: pre-wrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px; 
       }
-      .card-4:hover:after {
-        content: "Community Group";
+
+      .card-3:hover::after {
+        content: "Discover My Ministry is a class designed to help individuals understand their unique spiritual gifts, personality, and passions so they can find the best way to serve in their church or community. It typically includes teaching, assessments, and guidance to help participants discover where they fit best in ministry and how they can make a meaningful impact using their God-given abilities.";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+
+        display: block;
+        background-image: url('./assets/images/PNGS/dmc\ png.png');
+        background-repeat: no-repeat;
+        background-position: top center ;
+        background-size: 130px 60px;        
+        margin-top: 10px;
+
+        padding-top: 90px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+
+        width: auto;
+        height: 319px;
+        white-space: pre-wrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px; 
       }
-      .card-5:hover:after {
-        content: "I Disciple";
+
+
+
+      .card-4:hover::after {
+        content: "We are meant to grow in community — don’t miss the opportunity to join a C-Group! It’s where real friendships are formed, faith is strengthened, and lives are changed. Your new best friends are waiting to meet you and walk with you on this journey!.";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+
+        display: block;
+        background-image: url('./assets/images/PNGS/cg\ png.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 150px 60px;
+
+        padding-top: 110px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+
+        width: auto;
+        height: 320px;
+        white-space: pre-wrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px; 
       }
-      .card-6:hover:after {
-        content: "Worship Center";
+
+
+      .card-5:hover::after {
+        content: "Grow a disciple who makes other disciples to make Jesus known everywhere — in every city, every nation, and every generation. Be part of a movement that spreads God’s love through authentic relationships, intentional teaching, and a passion for the Gospel.";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+
+        display: block;
+        background-image: url('./assets/images/PNGS/dis.png');
+        background-repeat: no-repeat;
+        background-position: top center ;
+        background-size: 150px 60px;        
+        margin-top: 10px;
+
+        padding-top: 110px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+
+        width: auto;
+        height: 319px;
+        white-space: pre-wrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px; 
       }
-      
+
+
+      .card-6:hover::after {
+        content: "Global Surge provides Worship Centers throughout Metro Manila and Southeast Asia. Find a location near you! Come discover true worship and learn from God's word in a unique and contemporary atmosphere.";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+
+        display: block;
+        background-image: url('./assets/img/logoup.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 90px 90px;
+
+        padding-top: 110px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+
+        width: auto;
+        height: 320px;
+        white-space: pre-wrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px; 
+      }
+
+
+      @media (max-width: 600px) {
+        .card-1:hover::after {
+        font-size: 12px;
+        background-size: 115px 60px;
+        padding-top: 80px;
+        width: 100%;
+        height: 300px;
+      }
+
+      .card-2:hover::after {
+        font-size: 12px;
+        background-size: 115px 60px;
+        padding-top: 80px;
+        width: 100%;
+        height: 300px;
+      }
+
+      .card-3:hover::after {
+        font-size: 12px;
+        background-size: 115px 60px;
+        padding-top: 80px;
+        width: 100%;
+        height: 300px;
+      }
+
+      .card-4:hover::after {
+        font-size: 12px;
+        background-size: 150px 65px;
+        padding-top: 95px;
+        width: 100%;
+        height: 300px;
+      }
+
+      .card-5:hover::after {
+        font-size: 12px;
+        background-size: 160px 65px;
+        padding-top: 98px;
+        width: 100%;
+        height: 300px;
+      }
+
+      .card-6:hover::after {
+        font-size: 12px;
+        background-size: 108px 100px;
+        padding-top: 120px;
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+
+
       @media (max-width: 600px) {
         .card-1, .card-2, .card-3, .card-4, .card-5,
         .card-6{
@@ -396,14 +683,17 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="./assets/images/ConnectionTeam/whoweare.jpg" class="img-fluid" alt="" style="border-radius: 20px; height: 350px;">
+            <img src="./assets/images/ConnectionTeam/whoweare.jpg"
+             class="img-fluid" alt="" style="border-radius: 20px; border: solid 5px orange;  height: 330px;
+             box-shadow: 0 20px 40px rgba(0.5, 0.10, 0.10, 0.15)
+             ">
           </div>
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
             <center>
-            <h3 style="z-index: 999;">Who we are?</h3>
+            <h3 style="z-index: 999; font-weight: 900; font-size: 40px; color: orange;" >Who we are?</h3>
             <br>
           </center>
-            <p class="fst-italic" style="font-style: italic; text-align: justify;">
+            <p class="fst-italic" style="font-style: italic; text-align: justify; color: #1e4356;">
               "The Connection Ministry is a vital arm of the church focused on fostering meaningful relationships and ensuring that every individual who walks through the doors feels welcomed, supported, and integrated into the life of the church. This ministry is dedicated to building a strong sense of community by connecting people to the church’s resources, groups, and opportunities for spiritual growth. It serves as the bridge between newcomers, regular attendees, and the broader church community, ensuring that everyone has the opportunity to engage, belong, and thrive within the church environment. Through intentional follow-up, ongoing support, and the creation of welcoming spaces, the Connection Department/Ministry plays a key role in helping individuals move from initial contact to active participation and discipleship."
             </p>
           </div>
@@ -413,12 +703,12 @@
 
     </section><!-- /About Section -->
     <!-- Features Section -->
-    <section id="team" class="features section" style="margin-bottom: 50px;">
+    <section id="team" class="features section" style="background-image: url('./assets/images/bg222.png'); background-size: cover; background-position: center;">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Connection Team</h2>
-        <p>Let's meet the Connection Team</p>
+        <h2 style="font-weight: 900; font-size: 40px;">Connection Team</h2>
+        <p style="font-style: italic;">Let's meet the Connection Team</p>
       </div><!-- End Section Title -->
     
       <div class="container">
@@ -775,7 +1065,7 @@
               </div>
           
               <div class="col-md-7" style="display: block; margin: 0 auto;">
-                <h3>Ybeth Deuda</h3>
+                <h3>TBA</h3>
                 <h4>Manager</h4>
                 <p class="fst-italic">Greeters & Ushers Coordination</p>
                 <!-- Info Icon with Hover Text -->
@@ -1549,7 +1839,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Connection Ministry</span>
+            <span class="sitename" style="color: orange;">Connection Ministry</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Dr. Sixto Antonio Ave., </p>
@@ -1559,25 +1849,37 @@
             <p><strong>Messenger:</strong> <span>Global-Surge Follow-Up</span></p>
           </div>
         </div>
-
+ 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="">Ministries</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Get Involved</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Workshops</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Contact</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#featured-services">Ministries</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="getInvolved.html">Get Involved</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="workshop.html">Workshops</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <p>Visit our social medial for more update!</p>
+          <p>Visit our social media and other websites for more update!</p>
           <div class="social-links d-flex">
             <a href="https://web.facebook.com/GSWCPasig"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/gswcpasig?igsh=MWg2ZGdidWxnNDUwdg=="><i class="bi bi-instagram"></i></a>
+           
+            <a href="https://gswcpasig.netlify.app/" title="Go to GSWC Pasig">
+              <img src="./assets/img/logoup.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
+
+            <a href="https://bigjdance.live/?fbclid=IwZXh0bgNhZW0CMTEAAR19j9acCTUJ26ew0arM7UW4WA-aKxJrPQXeTNyyQGaXz4FgIsysSiP8Q94_aem_UEfgUOpOcBLDPkJEOQXeGg" title="Go to Big J">
+              <img src="./assets/img/bigj.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
+
+            <a href="http://gpro.22web.org/main.php?i=2" title="Go to Gpro">
+              <img src="./assets/img/gpro.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
   
           </div>
         </div>
@@ -1589,7 +1891,8 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Connection Ministry</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         
-        Designed by <a>Connection Ministry</a>
+        Designed by <a  style="color: orange; font-weight: bold;"> Connection Ministry</a>
+        <a style="color: #1e4356;" href="https://web.facebook.com/qzzzz.js1">DOM ^_^ </a>
       </div>
     </div>
 

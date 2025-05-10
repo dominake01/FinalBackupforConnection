@@ -27,13 +27,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Moderna
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 
 <body class="about-page">
@@ -41,13 +35,14 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="./assets/img/logoup.png" alt="" style=" width: 80px; height: 100px;">
-        <img src="assets/img/logo.png" alt="" style=" width: 80px; height: 100px;">
-        
-      </a>
-
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="https://globalsurge.church/">
+          <img src="./assets/img/logoup.png" alt="" style="width: 80px; height: 70px;">
+        </a>
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/logo.png" alt="" style="width: 80px; height: 100px;">
+        </a>
+      </div>
       
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -55,9 +50,9 @@
           <li><a href="index.html#featured-services">Ministries</a></li>
       
           <li class="dropdown">
-            <a href="#about">About Us</a>
+            <a href="index.html#about">About Us</a>
             <ul class="dropdown-menu">
-              <li><a href="#about">Who we are</a></li>
+              <li><a href="index.html#about">Who we are</a></li>
               <li><a href="#team">Team</a></li>
             </ul>
           </li>
@@ -69,6 +64,7 @@
           <li class="dropdown">
             <a href="workshop.html">Workshops</a>
             <ul class="dropdown-menu">
+              <a href="workshop.html" class="active">Workshops Leaders</a>
               <li><a href="./Workshops/drama.html">Acting</a></li>
               <li><a href="./Workshops/bigj.html">Big J</a></li>
               <li class="dropdown">
@@ -114,7 +110,7 @@
               </li>
 
               <li><a href="./Workshops/toughguys.html">Tough Guys</a></li>
-              <a href="workshop.html" class="active">Workshops Leaders</a>
+              
             </ul>
           </li>
       
@@ -145,298 +141,712 @@
     </div><!-- End Page Title -->
 
      <!-- Testimonials Section -->
-     <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Meet Our Workshop Leaders</h2>
-        <p style="font-style: italic; font-size: 12px;">Our skilled workshop leaders are dedicated to guiding and empowering you with their expertise, ensuring you achieve your goals.</p>
-    </div>
-    
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "speed": 600,
-              "loop": true,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-      
-          <div class="swiper-wrapper">
-            <!--Workshop Leader 1-->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="./assets/images/WorkshopLeader/Bhert.png" class="testimonial-img" alt="" style="height: 250px; width: 250px;"> 
-                <h2 style="font-weight: 700;">Bertmelan Calderon</h2>
-                <h3 style="color: orange; font-style: normal;">Big J Head</h3>
-                <h4 style="font-style: italic;">9705260714</h4>
-                
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Big J Dance Ministry is a dynamic ministry that combines dance, music, and faith to inspire,
-                    uplift, and bring people closer to God. Our team of passionate dancers, choreographers, and worship
-                    leaders strive to create an atmosphere of praise, worship, and celebration through various dance styles.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          <!--Workshop Leader 2-->
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="./assets/images/WorkshopLeader/Julius.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-              <h2 style="font-weight: 700;">Julius Valenzuela</h2>
-              <h3 style="color: orange; font-style: normal;">Drama Head</h3>
-              <h4 style="font-style: italic;">9985995702</h4>
-              
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>A ministry that utilises theatrical performances to convey biblical messages, stories, or themes. It aims to engage the congregation emotionally and spiritually through live performances, skits, and dramatisations that enhance worship experiences.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <!--Workshop Leader 3-->
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="./assets/images/WorkshopLeader/Ptr Prime.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-              <h2 style="font-weight: 700;">Ptr. Prime Erguiza</h2>
-              <h3 style="color: orange; font-style: normal;">Production Head</h3>
-              <h4 style="font-style: italic;">9569181101</h4>
-              
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>A ministry responsible for the technical and creative aspects of church services and events. This includes overseeing sound, lighting, video production, and stage management to ensure that all elements contribute to a seamless worship experience.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <!--Workshop Leader 4-->
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="./assets/images/WorkshopLeader/Sandy.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-              <h2 style="font-weight: 700;">Sandy Castillo</h2>
-              <h3 style="color: orange; font-style: normal;">Women's Volleyball Head</h3>
-              <h4 style="font-style: italic;">9519806772</h4>
-              
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>A ministry that organises volleyball activities for church members, promoting fellowship and teamwork through sports. It aims to build community relationships, encourage physical activity, and provide a fun environment for participants</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <!---Workshop Leader 5-->
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="./assets/images/WorkshopLeader/Jayson.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-              <h2 style="font-weight: 700;">Jayson Dayang</h2>
-              <h3 style="color: orange; font-style: normal;">Hoop Heaven Head</h3>
-              <h4 style="font-style: italic;">9915954406</h4>
-              
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>A ministry that focuses on basketball-related activities and events, emphasizing sportsmanship and community building. It offers opportunities for fellowship and engagement through basketball games, clinics, and tournaments.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <!--Workshop Leader 6-->
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="./assets/images/WorkshopLeader/Ptr Ryan.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-              <h2 style="font-weight: 700;">Ptr. Ryan Obasan</h2>
-              <h3 style="color: orange; font-style: normal;">Toughguys Head</h3>
-              <h4 style="font-style: italic;">9565181980</h4>
-              
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>A ministry that targets youth, focusing on building character, strength, and faith through physical challenges and activities. It aims to foster mentorship, camaraderie, and spiritual growth among participants through various programs and events.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <!--Workshop Leader 7-->
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <img src="./assets/images/WorkshopLeader/Ptr Cory.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-              <h2 style="font-weight: 700;">Ptr. Cory Lyons</h2>
-              <h3 style="color: orange; font-style: normal;">Badminton Leader</h3>
-              <h4 style="font-style: italic;">9175647123</h4>
-              
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>A ministry that organises badminton activities for church members, promoting health, fitness, and fellowship. It creates a space for participants to engage in friendly competition and community bonding while enjoying the sport</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-        <!--Workshop Leader 8-->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="./assets/images/WorkshopLeader/Trisha .png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-            <h2 style="font-weight: 700;">Tricia Rufin</h2>
-            <h3 style="color: orange; font-style: normal;">Music Head</h3>
-            <h4 style="font-style: italic;">9171227512</h4>
-            
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>A ministry focuses on using vocal and instrumental music to enhance worship services and church events. This ministry includes choirs, vocal ensembles, and instrumentalists who collaborate to create uplifting and spiritually enriching musical performances. By integrating various musical styles and genres, the ministry aims to engage the congregation in worship, foster a deeper connection with God, and encourage participation in the music. Through rehearsals, performances, and musical training, this ministry develops the talents of its members while contributing to the overall worship experience.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <!--Workshop Leader 9-->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-            <h2 style="font-weight: 700;">Zilla Cabarles</h2>
-            <h3 style="color: orange; font-style: normal;">Voice Head</h3>
-            <h4 style="font-style: italic;">N/A</h4>
-            
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>A **Music Ministry Workshop** equips musicians and worship leaders with skills in music, worship leading, and team dynamics through hands-on training and discussions.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <!--Workshop Leader 10-->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-            <h2 style="font-weight: 700;">James Buntad</h2>
-            <h3 style="color: orange; font-style: normal;">Drums Head</h3>
-            <h4 style="font-style: italic;">N/A</h4>
-            
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>The **Drums Ministry** enhances worship through skilled percussion, emphasizing rhythm, dynamics, and spiritual leadership.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <!--Workshop Leader 11-->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-            <h2 style="font-weight: 700;">Rannie Santos</h2>
-            <h3 style="color: orange; font-style: normal;">Keys Head</h3>
-            <h4 style="font-style: italic;">N/A</h4>
-            
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>The **Keys Ministry** enhances worship by providing melodic and harmonic support through keyboards and pianos. It focuses on musical excellence, creativity, and spiritual connection to enrich the worship experience.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-
-        <!--Workshop Leader 12-->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-            <h2 style="font-weight: 700;">Hanz Dela Cruz</h2>
-            <h3 style="color: orange; font-style: normal;">Guitar Head</h3>
-            <h4 style="font-style: italic;">N/A</h4>
-            
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>The **Guitar Ministry** enriches worship by providing rhythm, melody, and harmony through acoustic and electric guitars. It focuses on musical skill, creativity, and spiritual connection to support a dynamic worship experience.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <!--Workshop Leader 13-->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 250px; width: 250px;">
-            <h2 style="font-weight: 700;">Rannie Santos</h2>
-            <h3 style="color: orange; font-style: normal;">Guitar Head</h3>
-            <h4 style="font-style: italic;">N/A</h4>
-            
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>The **Bass Ministry** provides a strong rhythmic and harmonic foundation in worship, enhancing the musical flow and depth. It focuses on precision, groove, and spiritual connection to support the worship team.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
+     
 
     <!-- About Section -->
-    <section id="album" class="album section">
+    <section id="album" class="album section responsive-bg">
 
-      <div class="container">
+
+      <style>
+        .responsive-bg {
+        background-image: url('./assets/images/bgforcontact.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      
+      @media (max-width: 600px) {
+        .responsive-bg {
+          padding: 2rem 1rem;
+          min-height: 100vh; 
+          background-position: center; 
+        }
+      }
+
+      </style>
+
+      <div class="container" >
     
-        <div class="row gy-4">
-          <div class="col-lg-12" data-aos="fade-up">
+        <div class="row gy-4" >
+          <div class="col-lg-12" data-aos="fade-up" >
             <center>
-            <h3 style="font-size: 30px; font-weight: 900px;">List of our Workshop</h3>
+            <h1 style="font-size: 50px; font-weight: bolder;">List of our Workshop</h1>
             <p class="fst-italic">
               Let's join to our free workshops
             </p>
           </center>
           </div>
     
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="./assets/images/Hoopheaven/HH Boys A4.jpg" class="img-fluid" alt="Workshop Photo 1">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <img src="./assets/images/Hoopheaven/HH Kids A4.jpg" class="img-fluid" alt="Workshop Photo 2">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <img src="./assets/images/Hoopheaven/HH Women A4.jpg" class="img-fluid" alt="Workshop Photo 3">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <img src="./assets/images/Hoopheaven/Hoop Heaven Adult A4.jpg" class="img-fluid" alt="Workshop Photo 4">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <img src="./assets/images/OtherWorkshops/BigJ A4.jpg" class="img-fluid" alt="Workshop Photo 5">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <img src="./assets/images/OtherWorkshops/Drama A4.jpg" class="img-fluid" alt="Workshop Photo 6">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <img src="./assets/images/OtherWorkshops/Shuttlers A4.jpg" class="img-fluid" alt="Workshop Photo 6">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <img src="./assets/images/OtherWorkshops/tg1 (2).jpg" class="img-fluid" alt="Workshop Photo 6">
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <img src="./assets/images/OtherWorkshops/tg3.jpg" class="img-fluid" alt="Workshop Photo 6">
-          </div>
         </div>
-    
+        <ul class="cards">
+          <!--card1-->
+                  <li>
+                      <a href="./Workshops/drama.html" class="card" >
+                        <img src="./assets/images/OtherWorkshops/Drama A4.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                          <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                            <img class="card__thumb" src="./assets/images/WorkshopLeader/Julius.png" alt="" />
+                            <div class="card__header-text">
+                              <h3 class="card__title">Julius Valenzuela</h3>
+                              <span class="card__status">Drama Leader</span>
+                            </div>          
+                          </div>
+                          <p class="card__description">Join our church Drama Workshop to develop your acting skills, boost confidence, and collaborate in a creative, fun environment!</p>
+                          
+                          <button>Apply now!</button>
+                      </div>
+                      </a>
+                    </li>
+            <!--card2-->
+                    <li>
+                      <a href="./Workshops/bigj.html" class="card">
+                        <img src="./assets/images/OtherWorkshops/BigJ A4.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                          <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb" src="./assets/images/WorkshopLeader/Bhert.png" alt="" />
+                            <div class="card__header-text">
+                              <h3 class="card__title">Bertmelan Calderon</h3>            
+                              <span class="card__status">Big J Leader</span>
+                            </div>
+                          </div>
+                          <p class="card__description">Join the Big J Dance Workshop — a fun and faith-filled session
+                             designed to inspire creativity, build confidence, and praise God through movement.
+                            Open to all ages and skill levels!</p>
+                          <button>Apply now!</button>
+                      </div>
+                      </a>
+                    </li>
+                    
+          <!--card3-->
+                    <li>
+                        <a href="./Workshops/Voice.html" class="card">
+                          <img src="./assets/images/OtherWorkshops/tg3.jpg" class="card__image" alt="" />
+                          <div class="card__overlay">
+                            <div class="card__header">
+                              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                              <img class="card__thumb" src="./assets/images/ConnectionTeam/Ex.png" alt="" />
+                              <div class="card__header-text">
+                                <h3 class="card__title">Zilla Carbales</h3>
+                                <span class="card__status">Voice Leader</span>
+                              </div>          
+                            </div>
+                            <p class="card__description">Join our Voice Workshop to enhance your vocal skills for
+                              worship and ministry. Learn proper techniques, build confidence, and grow as a passionate 
+                              servant of God through music.
+                          </p>
+                          <button>Apply now!</button>
+                          </div>
+                        </a>
+                      </li> 
+            
+          <!--card4-->
+                  <li>
+                      <a href="./Workshops/Keys.html" class="card">
+                      <img src="./assets/images/OtherWorkshops/tg3.jpg" class="card__image" alt="" />
+                      <div class="card__overlay">
+                      <div class="card__header">
+                          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                          <img class="card__thumb" src="./assets/images/WorkshopLeader/TEST-RANNINE.jpg" alt="" />
+                          <div class="card__header-text">
+                          <h3 class="card__title">Rannie Santos</h3>            
+                          <span class="card__status">Keys Leader</span>
+                          </div>
+                      </div>
+                      <p class="card__description">
+                          Join our Basketball Workshop — a fun and faith-filled training session where
+                          youth and church members can build skills, teamwork, and Christ-centered values through sports!
+                      </p>
+                      <button>Apply now!</button>
+                      </div>
+                  </a>      
+                  </li>
+          
+                      <li>
+                          <a href="./Workshops/badminton.html" class="card">
+                            <img src="./assets/images/OtherWorkshops/Shuttlers A4.jpg" class="card__image" alt="" />
+                            <div class="card__overlay">        
+                              <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                                <img class="card__thumb" src="./assets/images/ConnectionTeam/Ex.png" alt="" />
+                                <div class="card__header-text">
+                                  <h3 class="card__title">TBA</h3>
+                                  <span class="card__status">Badminton Leader</span>
+                                </div>
+                              </div>
+                              <p class="card__description">
+                                  Join our Badminton Workshop to promote fun, fitness, and fellowship among
+                                  church members. Open to all skill levels, this activity aims to
+                                  build community through friendly games and teamwork.
+                              </p>
+                              <button>Apply now!</button>  
+                          </div>
+                          </a>
+                        </li>
+                   
+          <!--card5-->
+                        <li>
+                          <a href="./Workshops/toughguys.html" class="card">
+                            <img src="./assets/images/OtherWorkshops/tg1 (2).jpg" class="card__image" alt="" />
+                            <div class="card__overlay">
+                              <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                                <img class="card__thumb" src="./assets/images/WorkshopLeader/Ptr Ryan.png" alt="" />
+                                <div class="card__header-text">
+                                  <h3 class="card__title">Ptr. Ryan Obasan</h3>
+                                  <span class="card__status">Tough Guys Leader</span>
+                                </div>          
+                              </div>
+                              <p class="card__description">
+                                  A faith-based MMA training that builds strength,
+                                  discipline, and confidence through Christian values.
+                              </p>
+                              <button>Apply now!</button>
+                            </div>
+                          </a>
+                        </li> 
+              
+          <!--card6-->
+          
+          <!--card7-->
+          <li>
+              <a href="./Workshops/hoopheaven.html" class="card">
+                <img src="./assets/images/Hoopheaven/HH Boys A4.jpg" class="card__image" alt="" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <img class="card__thumb" src="./assets/images/WorkshopLeader/Jayson.png" alt="" />
+                    <div class="card__header-text">
+                      <h3 class="card__title">Jayson Dayang</h3>            
+                      <span class="card__status">Hoopheaven Leader</span>
+                    </div>
+                  </div>
+                  <p class="card__description">
+                    Join our Basketball Workshop — a fun and faith-filled training session where
+                    youth and church members can build skills, teamwork, and Christ-centered values through sports!
+                  </p>
+                  <button>Apply now!</button>
+                </div>
+              </a>      
+            </li>
+          <!--card8-->
+          <li>
+              <a href="./Workshops/hoopheaven.html" class="card">
+                <img src="./assets/images/Hoopheaven/HH Kids A4.jpg" class="card__image" alt="" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <img class="card__thumb" src="./assets/images/WorkshopLeader/Jayson.png" alt="" />
+                    <div class="card__header-text">
+                      <h3 class="card__title">Jayson Dayang</h3>            
+                      <span class="card__status">Hoopheaven Leader</span>
+                    </div>
+                  </div>
+                  <p class="card__description">
+                    Join our Basketball Workshop — a fun and faith-filled training session where
+                    youth and church members can build skills, teamwork, and Christ-centered values through sports!
+                  </p>
+                  <button>Apply now!</button>
+                </div>
+              </a>      
+            </li>             
+          <!--card9-->
+          <li>
+              <a href="./Workshops/hoopheaven.html" class="card">
+                <img src="./assets/images/Hoopheaven/HH Women A4.jpg" class="card__image" alt="" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <img class="card__thumb" src="./assets/images/WorkshopLeader/Jayson.png" alt="" />
+                    <div class="card__header-text">
+                      <h3 class="card__title">Jayson Dayang</h3>            
+                      <span class="card__status">Hoopheaven Leader</span>
+                    </div>
+                  </div>
+                  <p class="card__description">
+                    Join our Basketball Workshop — a fun and faith-filled training session where
+                    youth and church members can build skills, teamwork, and Christ-centered values through sports!
+                  </p>
+                  <button>Apply now!</button>
+                </div>
+              </a>      
+            </li> 
+                </ul>
+          
+                <section id="testimonials" class="testimonials section styled-testimonials">
+                  <style>
+                    .styled-testimonials {
+                      position: relative;
+                      border-radius: 20px;
+                      border: 2px solid orange;
+                      background-image: url('./assets/images/GSWC.png');
+                      background-size: cover;
+                      background-position: center;
+                      overflow: hidden;
+                      padding: 2rem;
+                    }
+                  
+                    .styled-testimonials::before {
+                      content: "";
+                      position: absolute;
+                      inset: 0;
+                      background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+                      z-index: 0;
+                    }
+                  
+                    .styled-testimonials > * {
+                      position: relative;
+                      z-index: 1;
+                    }
+                  
+                    .swiper-pagination {
+                      margin-top: 1rem; 
+                    }
+                  
+                    
+                    @media (max-width: 600px) {
+                      .styled-testimonials {
+                        padding: 1.5rem 1rem;
+                        background-position: center top;
+                        background-size: cover;
+                        border-radius: 12px;
+                      }
+                        
+                      .swiper-pagination {
+                        top: 100px; 
+                      }
+                    }
+                  </style>
+                  
+                  
+                  <div class="container section-title" data-aos="fade-up">
+                    <h2 style="color: orange; font-size: 40px; font-weight: 900;">Meet Our Workshop Leaders</h2>
+                    <p style="font-style: italic; font-size: 12px; font-weight: 500;">Our skilled workshop leaders are dedicated to guiding and empowering you with their expertise, ensuring you achieve your goals.</p>
+                </div>
+                
+            
+                  <div class="container" data-aos="fade-up" data-aos-delay="100">
+            
+                    <div class="swiper init-swiper">
+                      <script type="application/json" class="swiper-config">
+                        {
+                          "speed": 600,
+                          "loop": true,
+                          "autoplay": {
+                            "delay": 3000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          }
+                        }
+                      </script>
+
+                      <!--Hovering effect for phone-->
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const cards = document.querySelectorAll('.card');
+                      cards.forEach(card => {
+                        card.addEventListener('click', function (e) {
+                          if (e.target.tagName.toLowerCase() === 'button' || e.target.closest('button')) {
+                            return;
+                          }
+                          if (window.innerWidth <= 768) {
+                            e.preventDefault();
+                            cards.forEach(c => c !== card && c.classList.remove('show-overlay'));                            
+                            card.classList.toggle('show-overlay');
+                          }
+                        });
+                      });
+                    });
+                  </script>
+
+                      <!--Hovering effect for phone-->
+                      <div class="swiper-wrapper">
+                        <!--Workshop Leader 1-->
+                        <div class="swiper-slide">
+                          <div class="testimonial-item">
+                            <img src="./assets/images/WorkshopLeader/Bhert.png" class="testimonial-img" alt="" style="height: 200px; width: 200px;"> 
+                            <h2 style="font-weight: 700;">Bertmelan Calderon</h2>
+                            <h3 style="color: orange; font-style: normal;">Big J Head</h3>
+                            <h4 style="font-style: italic;">9705260714</h4>
+                            
+                            <p>
+                              <i class="bi bi-quote quote-icon-left"></i>
+                              <span>Big J Dance Ministry is a dynamic ministry that combines dance, music, and faith to inspire,
+                                uplift, and bring people closer to God.</span>
+                              <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                          </div>
+                        </div><!-- End testimonial item -->
+            
+                      <!--Workshop Leader 2-->
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="./assets/images/WorkshopLeader/Julius.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                          <h2 style="font-weight: 700;">Julius Valenzuela</h2>
+                          <h3 style="color: orange; font-style: normal;">Drama Head</h3>
+                          <h4 style="font-style: italic;">9985995702</h4>
+                          
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>A ministry that utilises theatrical performances to convey biblical messages, stories, or themes. It aims to engage the congregation emotionally and spiritually through live performances, skits, and dramatisations that enhance worship experiences.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+            
+                      <!--Workshop Leader 3-->
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="./assets/images/WorkshopLeader/Ptr Prime.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                          <h2 style="font-weight: 700;">Ptr. Prime Erguiza</h2>
+                          <h3 style="color: orange; font-style: normal;">Production Head</h3>
+                          <h4 style="font-style: italic;">9569181101</h4>
+                          
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>A ministry responsible for the technical and creative aspects of church services and events. This includes overseeing sound, lighting, video production, and stage management to ensure that all elements contribute to a seamless worship experience.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+            
+                      <!--Workshop Leader 4-->
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="./assets/images/WorkshopLeader/Sandy.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                          <h2 style="font-weight: 700;">Sandy Castillo</h2>
+                          <h3 style="color: orange; font-style: normal;">Women's Volleyball Head</h3>
+                          <h4 style="font-style: italic;">9519806772</h4>
+                          
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>A ministry that organises volleyball activities for church members, promoting fellowship and teamwork through sports. It aims to build community relationships, encourage physical activity, and provide a fun environment for participants</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+            
+                      <!---Workshop Leader 5-->
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="./assets/images/WorkshopLeader/Jayson.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                          <h2 style="font-weight: 700;">Jayson Dayang</h2>
+                          <h3 style="color: orange; font-style: normal;">Hoop Heaven Head</h3>
+                          <h4 style="font-style: italic;">9915954406</h4>
+                          
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>A ministry that focuses on basketball-related activities and events, emphasizing sportsmanship and community building. It offers opportunities for fellowship and engagement through basketball games, clinics, and tournaments.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+            
+                      <!--Workshop Leader 6-->
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="./assets/images/WorkshopLeader/Ptr Ryan.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                          <h2 style="font-weight: 700;">Ptr. Ryan Obasan</h2>
+                          <h3 style="color: orange; font-style: normal;">Toughguys Head</h3>
+                          <h4 style="font-style: italic;">9565181980</h4>
+                          
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>A ministry that targets youth, focusing on building character, strength, and faith through physical challenges and activities. It aims to foster mentorship, camaraderie, and spiritual growth among participants through various programs and events.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+            
+                      <!--Workshop Leader 7-->
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <img src="./assets/images/WorkshopLeader/Ptr Cory.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                          <h2 style="font-weight: 700;">Ptr. Cory Lyons</h2>
+                          <h3 style="color: orange; font-style: normal;">Badminton Leader</h3>
+                          <h4 style="font-style: italic;">9175647123</h4>
+                          
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>A ministry that organises badminton activities for church members, promoting health, fitness, and fellowship. It creates a space for participants to engage in friendly competition and community bonding while enjoying the sport</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div><!-- End testimonial item -->
+            
+                    <!--Workshop Leader 8-->
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <img src="./assets/images/WorkshopLeader/Trisha .png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                        <h2 style="font-weight: 700;">Tricia Rufin</h2>
+                        <h3 style="color: orange; font-style: normal;">Music Head</h3>
+                        <h4 style="font-style: italic;">9171227512</h4>
+                        
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          <span>A ministry focuses on using vocal and instrumental music to enhance worship services and church events. This ministry includes choirs, vocal ensembles, and instrumentalists who collaborate to create uplifting and spiritually enriching musical performances. By integrating various musical styles and genres, the ministry aims to engage the congregation in worship, foster a deeper connection with God, and encourage participation in the music. Through rehearsals, performances, and musical training, this ministry develops the talents of its members while contributing to the overall worship experience.</span>
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div><!-- End testimonial item -->
+            
+                    <!--Workshop Leader 9-->
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                        <h2 style="font-weight: 700;">Zilla Cabarles</h2>
+                        <h3 style="color: orange; font-style: normal;">Voice Head</h3>
+                        <h4 style="font-style: italic;">N/A</h4>
+                        
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          <span>A **Music Ministry Workshop** equips musicians and worship leaders with skills in music, worship leading, and team dynamics through hands-on training and discussions.</span>
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div><!-- End testimonial item -->
+            
+                    <!--Workshop Leader 10-->
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                        <h2 style="font-weight: 700;">James Buntad</h2>
+                        <h3 style="color: orange; font-style: normal;">Drums Head</h3>
+                        <h4 style="font-style: italic;">N/A</h4>
+                        
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          <span>The **Drums Ministry** enhances worship through skilled percussion, emphasizing rhythm, dynamics, and spiritual leadership.</span>
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+            
+                    <!--Workshop Leader 11-->
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <img src="./assets/images/WorkshopLeader/TEST-RANNINE.jpg" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                        <h2 style="font-weight: 700;">Rannie Santos</h2>
+                        <h3 style="color: orange; font-style: normal;">Keys Head</h3>
+                        <h4 style="font-style: italic;">N/A</h4>
+                        
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          <span>The Keys Ministry enhances worship by providing melodic and harmonic support through keyboards and pianos. It focuses on musical excellence, creativity, and spiritual connection to enrich the worship experience.</span>
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+            
+            
+                    <!--Workshop Leader 12-->
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                        <h2 style="font-weight: 700;">Hanz Dela Cruz</h2>
+                        <h3 style="color: orange; font-style: normal;">Guitar Head</h3>
+                        <h4 style="font-style: italic;">N/A</h4>
+                        
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          <span>The Guitar Ministry enriches worship by providing rhythm, melody, and harmony through acoustic and electric guitars. It focuses on musical skill, creativity, and spiritual connection to support a dynamic worship experience.</span>
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+            
+                    <!--Workshop Leader 13-->
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <img src="./assets/images/ConnectionTeam/Ex.png" class="testimonial-img" alt=""  style="height: 200px; width: 200px;">
+                        <h2 style="font-weight: 700;">Rannie Santos</h2>
+                        <h3 style="color: orange; font-style: normal;">Guitar Head</h3>
+                        <h4 style="font-style: italic;">N/A</h4>
+                        
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          <span>The **Bass Ministry** provides a strong rhythmic and harmonic foundation in worship, enhancing the musical flow and depth. It focuses on precision, groove, and spiritual connection to support the worship team.</span>
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+            
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+            
+                  </div>
+            
+                </section><!-- /Testimonials Section -->
+                
+            <style>
+               :root {
+              --surface-color: #fef8f8;
+              --curve: 40;
+              }
+          
+              * {
+              box-sizing: border-box;
+              }
+          
+              body {
+              font-family: 'Noto Sans JP', sans-serif;
+              background-color: #fef8f8;
+              }
+          
+              .cards {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 5px;
+              margin: 5px 5vw;
+              padding: 0;
+              list-style-type: none;
+              position: flex;
+              }
+          
+              .card {
+              position: relative;
+              display: block;
+              height: 98%;  
+              border-radius: calc(var(--curve) * 1px);
+              overflow: hidden;
+              text-decoration: none;
+              box-shadow: 0 20px 40px rgba(0.5, 0.10, 0.10, 0.15); 
+              margin-top: 5px;
+              width: auto;
+              }
+              
+
+              .card h3 {
+                font-size: 18px;
+              }
+
+              .card p {
+                font-size: 12px;
+              }
+          
+          
+              .card__image {      
+              width: 100%;
+              height: auto;
+              }
+          
+              .card__overlay {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: 1;      
+              border-radius: calc(var(--curve) * 1px);    
+              background-color: var(--surface-color);      
+              transform: translateY(100%);
+              transition: .2s ease-in-out;
+              }
+          
+              .card:hover .card__overlay {
+              transform: translateY(0);
+              }
+          
+              .card__header {
+              position: relative;
+              display: flex;
+              align-items: center;
+              gap: 2em;
+              padding: 2em;
+              border-radius: calc(var(--curve) * 1px) 0 0 0;    
+              background-color: var(--surface-color);
+              transform: translateY(-100%);
+              transition: .2s ease-in-out;
+              }
+          
+              .card__arc {
+              width: 80px;
+              height: 80px;
+              position: absolute;
+              bottom: 100%;
+              right: 0;      
+              z-index: 1;
+              }
+          
+              .card__arc path {
+              fill: var(--surface-color);
+              d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+              }       
+          
+              .card:hover .card__header {
+              transform: translateY(0);
+              }
+          
+              .card__thumb {
+              flex-shrink: 0;
+              width: 50px;
+              height: 50px;      
+              border-radius: 50%;      
+              }
+          
+              .card__title {
+              font-size: 20px;
+              margin: 0 0 .3em;
+              color: orange;
+              font-weight: bold;
+              }
+          
+              .card__tagline {
+              display: block;
+              margin: 1em 0;
+              font-family: "MockFlowFont";  
+              font-size: .8em; 
+              color: #1e4356;  
+              }
+          
+              .card__status {
+              font-size: .8em;
+              color: #1e4356;
+              font-weight:bold;
+              }
+          
+              .card__description {
+              padding: 0  2em 2em;
+              margin-top: 2px;
+              color: gray;
+              font-family: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   
+              font-size: 20px;
+              font-style: italic;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
+          
+              }    
+          
+              .card button {
+              background-color: orange;
+              color: white;
+              border: none;
+              font-style: normal;
+              height: 50px;
+              width: 100%;
+              border-radius: 7px;
+              cursor: pointer;
+              padding: 10px;
+              }
+              .card button:hover {
+              background-color: orangered;
+              }
+
+              .card.show-overlay .card__overlay,
+              .card.show-overlay .card__header {
+                transform: translateY(0);
+              }
+
+              
+          </style>
       </div>
     
     </section><!-- /About Section -->
@@ -456,7 +866,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Connection Ministry</span>
+            <span class="sitename" style="color: orange;">Connection Ministry</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Dr. Sixto Antonio Ave., </p>
@@ -466,25 +876,37 @@
             <p><strong>Messenger:</strong> <span>Global-Surge Follow-Up</span></p>
           </div>
         </div>
-
+ 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="">Ministries</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Get Involved</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Workshops</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Contact</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#featured-services">Ministries</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="getInvolved.html">Get Involved</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="workshop.html">Workshops</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <p>Visit our social medial for more update!</p>
+          <p>Visit our social media and other websites for more update!</p>
           <div class="social-links d-flex">
             <a href="https://web.facebook.com/GSWCPasig"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/gswcpasig?igsh=MWg2ZGdidWxnNDUwdg=="><i class="bi bi-instagram"></i></a>
+           
+            <a href="https://gswcpasig.netlify.app/" title="Go to GSWC Pasig">
+              <img src="./assets/img/logoup.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
+
+            <a href="https://bigjdance.live/?fbclid=IwZXh0bgNhZW0CMTEAAR19j9acCTUJ26ew0arM7UW4WA-aKxJrPQXeTNyyQGaXz4FgIsysSiP8Q94_aem_UEfgUOpOcBLDPkJEOQXeGg" title="Go to Big J">
+              <img src="./assets/img/bigj.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
+
+            <a href="http://gpro.22web.org/main.php?i=2" title="Go to Gpro">
+              <img src="./assets/img/gpro.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
   
           </div>
         </div>
@@ -496,7 +918,8 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Connection Ministry</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         
-        Designed by <a>Connection Ministry</a>
+        Designed by <a  style="color: orange; font-weight: bold;"> Connection Ministry</a>
+        <a style="color: #1e4356;" href="https://web.facebook.com/qzzzz.js1">DOM ^_^ </a>
       </div>
     </div>
 
